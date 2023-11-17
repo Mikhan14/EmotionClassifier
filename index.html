@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FINE-GRAINED SADNESS EMOTION CLASSIFIER</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div id="container">
+        <div class="header"> 
+            <h1>FINE-GRAINED SADNESS EMOTION CLASSIFIER</h1>
+            <hr>
+            <p id="description">This system provides a process where it classifies emotion in a given Text and Categorizes them with the help of Fine-Tuned RoBERTa Model</p>
+        </div>
+        <form id="input-form">
+            <div = class="post-container">
+                <div class="post-options">
+                    <div class="primary-opt">
+                        <img width="24" height="24" src="https://img.icons8.com/ios-filled/50/faf5d6/reddit--v1.png" alt="reddit--v1"/>                  
+                        <label id="opt-a" for="reddit-post">Reddit Post:</label>
+                    </div>
+                    <div class="others-opt">
+                        <img id="opt-b" width="24" height="24" src="https://img.icons8.com/sf-black/64/faf5d6/link.png" alt="link"/>
+
+                        <img id="opt-c" width="24" height="24" src="https://img.icons8.com/pastel-glyph/64/faf5d6/upload--v1.png" alt="upload--v1"/>
+                    </div>
+
+                </div>
+                <textarea id="reddit-post" name="reddit-post" rows="15" cols="50" required ></textarea><br>
+                <div class="bottom-details">
+                    <div class="button-container">
+                        <button id="clear-btn" type="button">Clear</button>
+                        <button id="analyze-btn" type="button">Analyze</button>
+                    </div>
+                    <div class="counter-char">0/5000</div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div class="background">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+</html>
